@@ -4,7 +4,6 @@ This is a repository for deploying security controls as Github Actions for your 
 ## TODO
 - __container scanning__
   - Trivy
-  - 
 - __dependency list__
   - Gitlab custom dependency listing tool?
 - __dependency scanning__
