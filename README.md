@@ -1,7 +1,7 @@
 # SecurityGithubActions
 This is a repository for deploying security controls as Github Actions for your Github projects.
   
-##TODO
+## TODO
 - __container scanning__
 - __dependency list__
 - __dependency scanning__
