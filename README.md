@@ -1,5 +1,5 @@
 # SecurityGithubActions
-This is a repository for deploying security controls as Github Actions for your Github projects. The intent is to achieve feature parity with or exceed the capabilities provided natively @ Gitlab via ![Auto DevOps]()
+This is a repository for deploying security controls as Github Actions for your Github projects. The intent is to achieve feature parity with or exceed the capabilities provided natively @ Gitlab via [Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
   
 ## TODO
 - __container scanning__
