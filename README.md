@@ -1,12 +1,12 @@
 # SecurityGithubActions
-This is a repository for deploying security controls as Github Actions for your Github projects. The intent is to achieve feature parity with or exceed the capabilities provided natively @ Gitlab via [Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
+This is a repository for deploying security scanning controls as Github Actions for your Github source code. The intent is to achieve feature parity with or exceed the capabilities provided natively @ Gitlab via [Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
   
 ## TODO
-- __container scanning__
+- __Container Scanning__
   - Trivy
-- __dependency list__
+- __Dependency List__
   - Gitlab custom dependency listing tool?
-- __dependency scanning__
+- __Dependency Scanning__
   - Analyzers
     - Ruby
       - Gemnasium
@@ -18,12 +18,91 @@ This is a repository for deploying security controls as Github Actions for your 
       - Gemnasium (supports multiple lockfiles)
       - Retire.js (does not support multiple lockfiles)
     - PHP, Go, C, C++, .NET, C# (supports multiple lockfiles)
-- __dynamic application security testing (DAST)__
+- __Dynamic Application Security Testing (DAST)__
+  - OWASP ZAP (baseline or passive/active)
 - __DAST API__
-- __API fuzzing__
+  - OpenAPI v2 or v3 spec
+  - HTTP Archive (HAR)
+  - Postman Collection v2.0 or v2.1
+- __API Fuzzing__
+  - DAST API + Fuzzing Template
 - __Secret Detection__
+  - Gitleaks
 - __Security Dashboard__
-- __Coverage fuzzing__
+  - This feature set has to do with how scan results are reported centrally
+- __Static Application Security Testing (SAST)__
+  - .NET Core
+    - Security Code Scan   
+  - .NET Framework
+    - Security Code Scan 
+  - Apex (Salesforce)
+    - PMD 
+  - C
+    - Semgrep
+  - C/C++
+    - Flawfinder
+  - Elixir (Phoenix)
+    - Sobelow 
+  - GoLang
+    - Gosec
+  - Groovy (Ant, Gradle, Maven, and SBT)
+    - SpotBugs with the find-sec-bugs plugin
+  - Helm Charts
+    - Kubesec
+  - Java (Ant, Gradle, Maven, and SBT)
+    - SpotBugs with the find-sec-bugs plugin
+  - Java (Android)
+    - MobSF (beta) 
+  - Javascript
+    - ESLint security plugin
+    - Semgrep 
+  - Kotlin (Android)
+    - MobSF (beta) 
+  - Kotlin (General)
+    - SpotBugs with the find-sec-bugs plugin 
+  - Kubernetes manifests
+    - Kubesec
+  - Node.js
+    - NodeJsScan 
+  - Objective-C (iOS)
+    - MobSF (beta) 
+  - PHP
+    - phpcs-security-audit
+  - Python (pip)
+    - bandit
+  - Python
+    - Semgrep
+  - React
+    - ESLint react plugin 
+  - Ruby
+    - brakeman 
+  - Ruby on Rails
+    -  brakeman
+  - Scala (Ant, Maven, Gradle, Maven, and SBT)
+    - SpotBugs with the find-sec-bugs plugin
+  - Swift (iOS)
+    - MobSF (beta) 
+  - TypeScript
+    - ESLint security plugin
+    - Semgrep  
+- __Coverage Fuzzing__
+  - C/C++
+    - libFuzzer
+  - GoLang
+    - go-fuss (libFuzzer support) 
+  - Swift
+    - libFuzzer 
+  - Rust
+    - cargo-fuzz (libFuzzer support) 
+  - Java
+    - Javafuzz (recommended)
+    - JQF (not preferred) 
+  - Javascript
+    - jsfuzz 
+  - Python
+    - pythonfuzz 
+  - Generic
+    - AFL     
 - __Cluster Image Scanning__
 
 ## Not Included in Gitlab, but proposed based on AErmie examples
