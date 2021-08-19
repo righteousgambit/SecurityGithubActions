@@ -3,7 +3,7 @@ This is a repository for deploying security scanning controls as Github Actions 
   
 ## TODO
 - __Container Scanning__
-  - Trivy
+  - [Trivy](./.github/workflows/container-scanner.yml)
 - __Dependency List__
   - Gitlab custom dependency listing tool?
 - __Dependency Scanning__
