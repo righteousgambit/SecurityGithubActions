@@ -1,7 +1,7 @@
 # SecurityGithubActions
 This is a repository for deploying security scanning controls as Github Actions for your Github source code. The intent is to achieve feature parity with or exceed the capabilities provided natively @ Gitlab via [Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
   
-## TODO
+## Pipeline Tools
 - __Container Scanning__
   - [Trivy](./.github/workflows/container-scanner.yml)
 - __Dependency List__
